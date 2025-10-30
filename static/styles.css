@@ -1,0 +1,167 @@
+:root {
+    font-size: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-beetween;
+}
+
+.h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 70%;
+    gap: 5px
+}
+
+.h2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.legal_name {
+    font-size: 0.9rem;
+    padding: 1px;
+    padding-bottom: 4px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+.small {
+    font-size: 0.6rem;
+}
+
+.right {
+    text-align: right;
+}
+
+.larger {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding-block: 1rem;
+}
+
+.half {
+    width: 50%;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem
+}
+
+.des {
+    margin-left: 5vw;
+}
+
+.redLine {
+    border-block: 1px solid red;
+    padding-block: 0.25rem;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+}
+
+.transform {
+    display: inline-block;
+    transform: translateY(55%);
+}
+
+.table1 {
+    margin: 0.5rem 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bRedline {
+    border-bottom: 2px solid red;
+}
+
+.redLineTable {
+    border-top: 2px solid red;
+}
+
+caption {
+    text-align: justify;
+    text-align-last: start;
+    caption-side: bottom;
+}
+
+.main_div_footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-block: 1rem;
+}
+
+.t2 {
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+    margin-inline: 1vw;
+
+    & table {
+        width: 95%;
+        border-collapse: collapse;
+    }
+}
+
+.left {
+    text-align: left;
+}
+
+.grafico {
+    display: block;
+    width: 40%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        /* Para Chrome/Safari */
+        print-color-adjust: exact;
+        /* Estándar */
+    }
+}

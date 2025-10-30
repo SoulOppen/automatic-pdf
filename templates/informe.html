@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Informe</title>
+</head>
+<body>
+    <header>
+        <section class="h1">
+            <h1>CIRCLE PRIVATE CAPITAL</h1>
+            <div>
+                <p class="legal_name">Circle Provate capital</p>
+                <p class="small">2999 NE 191 St. Suit 201</p>
+                <p class="small">Aventura, Florida 33180</p>
+            </div>
+        </section>
+        <section class="h2">
+                <p class="right bold larger">Brokarage</p>
+                <p class="right larger">Account statment</p>
+        </section>
+    </header>
+    <main>
+        <section class="half column">
+            <div class="des">
+                {% for persona in personas %}
+                    <p>{{ persona }}</p>
+                {% endfor %}
+            </div>
+            <div>
+                <p class="bold">Your financial advisor</p>
+                <p>{{name_advisor}}</p>
+            </div>
+        </section>
+        <section class="half column">
+            <div>
+                <!-- <p class="larger right">August 1 2025 - September 1 2025</p> -->
+                <p class="larger right">Account Number: {{account}}</p>
+            </div>
+            <div>
+                <div class="redLine">
+                    <p class="blue transform">
+                        Portafolio at glace
+                    </p>
+                </div>
+                <table class="table1">
+                    <thead>
+                        <tr class="bRedline">
+                        <th></th>
+                        <th class="right">This period</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bold">Beginnig acount value</td>
+                            <td class="bold right">${{original_account_value}}</td>
+                        </tr>
+                        <tr>
+                            <td>Dividens,interest and other incomes</td>
+                            <td class="right">${{incomes}}</td>
+                        </tr>
+                        <tr>
+                            <td>Administration Charge</td>
+                            <td class="right">${{charge}}</td>
+                        </tr>
+                        <tr>
+                            <td class="blue">Ending Account Value</td>
+                            <td class="blue right">${{end_account_value}}</td>
+                        </tr>
+                        <tr class="redLineTable">
+                            <td class="bold">Account value with accrued interest</td>
+                            <td class="right">${{value_with_accrued}}</td>
+                        </tr>
+                        <tr>
+                            <td >Estimate annual incomet</td>
+                            <td class="right">${{annual_income}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="bRedline">
+                <p class="blue transform">Assets summary</p>
+            </div>
+            <div class="main_div_footer">
+                <div class="grafico">
+                    <img src="./src/img.png" alt="Grafico" class="img"/>
+                </div>
+                <div class="t2">
+                <table>
+                    <thead>
+                        <tr class="bRedline">
+                            <th class="left">Percernt</th>
+                            <th class="left">Asset type</th>
+                        <tr/>
+                    </thead>
+                    <tbody>
+                        {% for tipo in tipos %}
+                        <tr>
+                            <td>{{tipo[0]}}%</td>
+                            <td>{{tipo[1]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td colspan="3" class="small">
+                                Please review your allocation with you advisor frecuently
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
