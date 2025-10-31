@@ -18,7 +18,7 @@ def gen_pdf(
     template = env.get_template('./templates/informe.html')
     data = {
         "name_advisor":name,
-        "persona":info_persona,
+        "personas":info_persona,
         "account":account,
         "original_account_value":original_account_value,
         "incomes":incomes,
