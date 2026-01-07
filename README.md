@@ -1,10 +1,10 @@
-AUTOMATIC
+# AUTOMATIC
 
 Automatic es una herramienta en Python para la generación de reportes dinámicos a partir de datos tabulares. Permite combinar plantillas HTML, procesamiento de datos y visualizaciones para producir reportes en HTML, Excel y PDF de forma automatizada.
 
 Está pensada para simplificar la creación de reportes repetitivos, eliminando trabajo manual y facilitando la reutilización de plantillas.
 
-CARACTERÍSTICAS
+## CARACTERÍSTICAS
 
 *   Renderizado de plantillas HTML usando Jinja2
     
@@ -19,7 +19,7 @@ CARACTERÍSTICAS
 *   Gestión y ejecución del proyecto utilizando uv
     
 
-MOTIVACIÓN
+## MOTIVACIÓN
 
 En muchos proyectos, la generación de reportes implica tareas repetitivas: copiar datos desde Excel, crear gráficos manualmente y exportar documentos finales.
 
@@ -34,7 +34,7 @@ Automatic nace para resolver ese problema, permitiendo:
 *   Reducir errores humanos en la generación de informes
     
 
-REQUISITOS
+## REQUISITOS
 
 *   Python 3.12 o superior
     
@@ -58,7 +58,7 @@ Dependencias principales del proyecto:
 *   playwright (opcional, solo para exportar a PDF)
     
 
-QUICK START
+## QUICK START
 
 Clonar el repositorio:
 
@@ -72,7 +72,7 @@ Si se usará exportación a PDF, instalar los navegadores de Playwright:
 
 uv run playwright install
 
-USO
+## USO
 
 1.  Preparar los datos
     
@@ -114,7 +114,7 @@ Automatic permite generar gráficos con matplotlib e integrarlos dentro de los r
 
 Los gráficos pueden exportarse como imágenes y luego ser referenciados desde las plantillas HTML.
 
-CONTRIBUIR
+## CONTRIBUIR
 
 Las contribuciones son bienvenidas.
 
@@ -136,3 +136,4 @@ Este proyecto se distribuye bajo la licencia MIT.Se permite su uso, modificació
 ESTADO DEL PROYECTO
 
 En desarrollo activo.Las APIs pueden cambiar mientras se estabiliza la primera versión.
+
