@@ -46,8 +46,9 @@ Automatic was created to solve this problem by enabling:
     
 
 Install uv:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install uv   `
+```bash
+pip install uv
+```
 
 Main project dependencies:
 
@@ -147,4 +148,5 @@ This project is distributed under the MIT License.It allows free use, modificati
 Actively under development.APIs may change while the first version is being stabilized.
 
 Si quieres, también puedo ajustarlo a **estilo README de GitHub**, **documentación técnica**, o **tono más marketing**.
+
 
