@@ -1,10 +1,11 @@
-# **AUTOMATIC**
+# Automatic
+---------
 
 Automatic is a Python tool for generating dynamic reports from tabular data. It allows you to combine HTML templates, data processing, and visualizations to produce automated reports in HTML, Excel, and PDF formats.
 
 It is designed to simplify the creation of repetitive reports, eliminating manual work and making template reuse easier.
 
-## FEATURES
+## Features
 --------
 
 *   HTML template rendering using Jinja2
@@ -20,7 +21,7 @@ It is designed to simplify the creation of repetitive reports, eliminating manua
 *   Project management and execution using uv
     
 
-## MOTIVATION
+## Motivation
 ----------
 
 In many projects, report generation involves repetitive tasks: copying data from Excel, manually creating charts, and exporting final documents.
@@ -36,7 +37,7 @@ Automatic was created to solve this problem by enabling:
 *   Reduction of human errors in report generation
     
 
-REQUIREMENTS
+## Requirements
 ------------
 
 *   Python 3.12 or higher
@@ -61,7 +62,7 @@ Main project dependencies:
 *   playwright (optional, only for PDF export)
     
 
-## QUICK START
+Quick start
 -----------
 
 Clone the repository:
@@ -76,7 +77,7 @@ If PDF export will be used, install Playwright browsers:
 
 Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uv run playwright install   `
 
-## USAGE
+Usage
 -----
 
 ### Prepare the data
@@ -100,7 +101,7 @@ Combine the processed data with the template to generate the final HTML.
 *   Optional PDF using Playwright
     
 
-## CHARTS
+## Charts
 ------
 
 Automatic allows generating charts with matplotlib and integrating them into reports, including:
@@ -116,7 +117,7 @@ Automatic allows generating charts with matplotlib and integrating them into rep
 
 Charts can be exported as images and then referenced from HTML templates.
 
-## CONTRIBUTING
+## Contributing
 ------------
 
 Contributions are welcome.
@@ -132,14 +133,14 @@ Recommended steps:
 4.  Open a Pull Request
     
 
-## LICENSE
+## License
 -------
 
 This project is distributed under the MIT License.It allows free use, modification, and distribution.
 
-## PROJECT STATUS
+## Project status
 --------------
 
 Actively under development.APIs may change while the first version is being stabilized.
 
-
+Si quieres, también puedo ajustarlo a **estilo README de GitHub**, **documentación técnica**, o **tono más marketing**.
