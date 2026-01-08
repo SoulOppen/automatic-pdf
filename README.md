@@ -65,17 +65,20 @@ Main project dependencies:
 Quick start
 -----------
 
-Clone the repository:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/tu-usuario/automatic.git  cd automatic   `
+```bash
+git clone https://github.com/tu-usuario/automatic.git
+cd automatic
+```
 
 Install dependencies using uv:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uv sync   `
+```bash
+uv sync
+```   
 
 If PDF export will be used, install Playwright browsers:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uv run playwright install   `
+```bash
+uv run playwright install
+```
 
 Usage
 -----
@@ -144,3 +147,4 @@ This project is distributed under the MIT License.It allows free use, modificati
 Actively under development.APIs may change while the first version is being stabilized.
 
 Si quieres, también puedo ajustarlo a **estilo README de GitHub**, **documentación técnica**, o **tono más marketing**.
+
