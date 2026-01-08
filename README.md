@@ -1,51 +1,54 @@
-# AUTOMATIC
+# **AUTOMATIC**
 
-Automatic es una herramienta en Python para la generación de reportes dinámicos a partir de datos tabulares. Permite combinar plantillas HTML, procesamiento de datos y visualizaciones para producir reportes en HTML, Excel y PDF de forma automatizada.
+Automatic is a Python tool for generating dynamic reports from tabular data. It allows you to combine HTML templates, data processing, and visualizations to produce automated reports in HTML, Excel, and PDF formats.
 
-Está pensada para simplificar la creación de reportes repetitivos, eliminando trabajo manual y facilitando la reutilización de plantillas.
+It is designed to simplify the creation of repetitive reports, eliminating manual work and making template reuse easier.
 
-## CARACTERÍSTICAS
+## FEATURES
+--------
 
-*   Renderizado de plantillas HTML usando Jinja2
+*   HTML template rendering using Jinja2
     
-*   Manejo y transformación de datos con pandas
+*   Data handling and transformation with pandas
     
-*   Soporte para gráficos generados con matplotlib
+*   Support for charts generated with matplotlib
     
-*   Lectura y escritura de archivos Excel mediante openpyxl
+*   Reading and writing Excel files using openpyxl
     
-*   Exportación opcional de reportes a PDF usando Playwright
+*   Optional export of reports to PDF using Playwright
     
-*   Gestión y ejecución del proyecto utilizando uv
-    
-
-## MOTIVACIÓN
-
-En muchos proyectos, la generación de reportes implica tareas repetitivas: copiar datos desde Excel, crear gráficos manualmente y exportar documentos finales.
-
-Automatic nace para resolver ese problema, permitiendo:
-
-*   Automatizar reportes periódicos
-    
-*   Mantener un diseño consistente mediante plantillas
-    
-*   Separar datos, lógica y presentación
-    
-*   Reducir errores humanos en la generación de informes
+*   Project management and execution using uv
     
 
-## REQUISITOS
+## MOTIVATION
+----------
 
-*   Python 3.12 o superior
+In many projects, report generation involves repetitive tasks: copying data from Excel, manually creating charts, and exporting final documents.
+
+Automatic was created to solve this problem by enabling:
+
+*   Automation of periodic reports
     
-*   uv instalado
+*   Consistent design through reusable templates
+    
+*   Clear separation of data, logic, and presentation
+    
+*   Reduction of human errors in report generation
     
 
-Instalación de uv:
+REQUIREMENTS
+------------
 
-pip install uv
+*   Python 3.12 or higher
+    
+*   uv installed
+    
 
-Dependencias principales del proyecto:
+Install uv:
+
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install uv   `
+
+Main project dependencies:
 
 *   jinja2
     
@@ -55,85 +58,88 @@ Dependencias principales del proyecto:
     
 *   openpyxl
     
-*   playwright (opcional, solo para exportar a PDF)
+*   playwright (optional, only for PDF export)
     
 
 ## QUICK START
+-----------
 
-Clonar el repositorio:
+Clone the repository:
 
-git clone https://github.com/tu-usuario/automatic.gitcd automatic
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/tu-usuario/automatic.git  cd automatic   `
 
-Instalar dependencias usando uv:
+Install dependencies using uv:
 
-uv sync
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uv sync   `
 
-Si se usará exportación a PDF, instalar los navegadores de Playwright:
+If PDF export will be used, install Playwright browsers:
 
-uv run playwright install
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uv run playwright install   `
 
-## USO
+## USAGE
+-----
 
-1.  Preparar los datos
+### Prepare the data
+
+Load and process data using pandas, for example by reading Excel or CSV files.
+
+### Create an HTML template
+
+Define HTML templates using Jinja2 to structure the report.
+
+### Render the report
+
+Combine the processed data with the template to generate the final HTML.
+
+### Export results
+
+*   HTML as direct output
+    
+*   Excel using openpyxl
+    
+*   Optional PDF using Playwright
     
 
-Cargar y procesar datos usando pandas, por ejemplo leyendo archivos Excel o CSV.
+## CHARTS
+------
 
-1.  Crear una plantilla HTML
+Automatic allows generating charts with matplotlib and integrating them into reports, including:
+
+*   Line charts
+    
+*   Bar charts
+    
+*   Pie charts
+    
+*   Custom visualizations
     
 
-Definir plantillas HTML utilizando Jinja2 para estructurar el reporte.
+Charts can be exported as images and then referenced from HTML templates.
 
-1.  Renderizar el reporte
+## CONTRIBUTING
+------------
+
+Contributions are welcome.
+
+Recommended steps:
+
+1.  Fork the project
+    
+2.  Create a branch for the feature or fix
+    
+3.  Make changes with clear commits
+    
+4.  Open a Pull Request
     
 
-Combinar los datos procesados con la plantilla para generar el HTML final.
+## LICENSE
+-------
 
-1.  Exportar resultados
-    
+This project is distributed under the MIT License.It allows free use, modification, and distribution.
 
-*   HTML como salida directa
-    
-*   Excel mediante openpyxl
-    
-*   PDF de forma opcional usando Playwright
-    
+## PROJECT STATUS
+--------------
 
-GRÁFICOS
+Actively under development.APIs may change while the first version is being stabilized.
 
-Automatic permite generar gráficos con matplotlib e integrarlos dentro de los reportes, incluyendo:
-
-*   Gráficos de líneas
-    
-*   Gráficos de barras
-    
-*   Gráficos de torta
-    
-*   Visualizaciones personalizadas
-    
-
-Los gráficos pueden exportarse como imágenes y luego ser referenciados desde las plantillas HTML.
-
-## CONTRIBUIR
-
-Las contribuciones son bienvenidas.
-
-Pasos recomendados:
-
-1.  Hacer un fork del proyecto
-    
-2.  Crear una rama para la funcionalidad o corrección
-    
-3.  Realizar los cambios con commits claros
-    
-4.  Abrir un Pull Request
-    
-
-LICENCIA
-
-Este proyecto se distribuye bajo la licencia MIT.Se permite su uso, modificación y distribución libremente.
-
-ESTADO DEL PROYECTO
-
-En desarrollo activo.Las APIs pueden cambiar mientras se estabiliza la primera versión.
 
