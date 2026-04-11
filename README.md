@@ -1,6 +1,6 @@
 <div align="center">
 
-![Banner del proyecto](docs/assets/readme-banner.svg)
+<img src="./docs/assets/readme-banner.svg" alt="Automatic PDF - banner del proyecto" width="880" height="180" />
 
 [![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![uv](https://img.shields.io/badge/uv-sync-5A2FC7?style=for-the-badge&logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
@@ -27,7 +27,7 @@ static/excel.xlsx  →  pandas + matplotlib  →  templates/informe.html  →  i
 
 ## Vista previa del flujo
 
-![Diagrama del flujo de datos](docs/assets/readme-flujo.svg)
+<img src="./docs/assets/readme-flujo.svg" alt="Diagrama: Excel, Python, HTML, PDF" width="720" height="120" />
 
 ## Características
 

@@ -1,28 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="120" viewBox="0 0 720 120" role="img" aria-label="Flujo: Excel, Python, HTML, PDF">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="120" viewBox="0 0 720 120">
   <defs>
-    <style>
-      .box { fill: #f1f5f9; stroke: #64748b; stroke-width: 1.5; rx: 8; }
-      .txt { fill: #0f172a; font-family: Segoe UI, system-ui, sans-serif; font-size: 14px; font-weight: 600; }
-      .sub { fill: #475569; font-family: Segoe UI, system-ui, sans-serif; font-size: 11px; }
-      .arr { fill: none; stroke: #64748b; stroke-width: 2; marker-end: url(#m); }
-    </style>
-    <marker id="m" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
     </marker>
   </defs>
-  <rect class="box" x="10" y="28" width="130" height="64"/>
-  <text class="txt" x="75" y="58" text-anchor="middle">Excel</text>
-  <text class="sub" x="75" y="76" text-anchor="middle">.xlsx</text>
-  <path class="arr" d="M 145 60 L 175 60"/>
-  <rect class="box" x="175" y="28" width="130" height="64"/>
-  <text class="txt" x="240" y="58" text-anchor="middle">Python</text>
-  <text class="sub" x="240" y="76" text-anchor="middle">pandas</text>
-  <path class="arr" d="M 310 60 L 340 60"/>
-  <rect class="box" x="340" y="28" width="130" height="64"/>
-  <text class="txt" x="405" y="58" text-anchor="middle">HTML</text>
-  <text class="sub" x="405" y="76" text-anchor="middle">Jinja2</text>
-  <path class="arr" d="M 475 60 L 505 60"/>
-  <rect class="box" x="505" y="28" width="130" height="64"/>
-  <text class="txt" x="570" y="58" text-anchor="middle">PDF</text>
-  <text class="sub" x="570" y="76" text-anchor="middle">Playwright</text>
+  <rect x="10" y="28" width="130" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="75" y="58" text-anchor="middle" fill="#0f172a" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Excel</text>
+  <text x="75" y="76" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif" font-size="11">.xlsx</text>
+  <path d="M 145 60 L 168 60" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="175" y="28" width="130" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="240" y="58" text-anchor="middle" fill="#0f172a" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Python</text>
+  <text x="240" y="76" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif" font-size="11">pandas</text>
+  <path d="M 310 60 L 333 60" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="340" y="28" width="130" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="405" y="58" text-anchor="middle" fill="#0f172a" font-family="system-ui,sans-serif" font-size="14" font-weight="600">HTML</text>
+  <text x="405" y="76" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif" font-size="11">Jinja2</text>
+  <path d="M 475 60 L 498 60" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="505" y="28" width="130" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="570" y="58" text-anchor="middle" fill="#0f172a" font-family="system-ui,sans-serif" font-size="14" font-weight="600">PDF</text>
+  <text x="570" y="76" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif" font-size="11">Playwright</text>
 </svg>

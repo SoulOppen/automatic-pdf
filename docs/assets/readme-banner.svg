@@ -1,12 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="180" viewBox="0 0 880 180" role="img" aria-label="Automatic PDF  informes desde Excel">
-  <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e3a5f"/>
-    </linearGradient>
-  </defs>
-  <rect width="880" height="180" rx="14" fill="url(#g)"/>
-  <text x="44" y="78" fill="#f8fafc" font-family="Segoe UI,system-ui,sans-serif" font-size="34" font-weight="700">Automatic PDF</text>
-  <text x="44" y="118" fill="#94a3b8" font-family="Segoe UI,system-ui,sans-serif" font-size="17">Excel ’ Jinja2 ’ HTML/CSS ’ Playwright (PDF)</text>
-  <text x="44" y="150" fill="#64748b" font-family="Segoe UI,system-ui,sans-serif" font-size="13">Repo: SoulOppen / automatic-pdf</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="180" viewBox="0 0 880 180">
+  <rect width="880" height="180" rx="14" fill="#0f172a"/>
+  <text x="44" y="78" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="34" font-weight="700">Automatic PDF</text>
+  <text x="44" y="118" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="17">Excel, Jinja2, HTML/CSS, Playwright (PDF)</text>
+  <text x="44" y="150" fill="#64748b" font-family="system-ui,sans-serif" font-size="13">SoulOppen / automatic-pdf</text>
 </svg>
