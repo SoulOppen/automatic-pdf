@@ -1,153 +1,98 @@
-# Automatic
----------
+<div align="center">
 
-Automatic is a Python tool for generating dynamic reports from tabular data. It allows you to combine HTML templates, data processing, and visualizations to produce automated reports in HTML, Excel, and PDF formats.
+![Banner del proyecto](docs/assets/readme-banner.svg)
 
-It is designed to simplify the creation of repetitive reports, eliminating manual work and making template reuse easier.
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![uv](https://img.shields.io/badge/uv-sync-5A2FC7?style=for-the-badge&logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
+[![Playwright](https://img.shields.io/badge/Playwright-Chromium-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)](https://playwright.dev/)
+[![Jinja2](https://img.shields.io/badge/Jinja2-plantillas-B41717?style=for-the-badge&logo=jinja&logoColor=white)](https://jinja.palletsprojects.com/)
+[![pandas](https://img.shields.io/badge/pandas-datos-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 
-## Features
---------
+[![Repo](https://img.shields.io/badge/GitHub-automatic--pdf-181717?style=flat-square&logo=github)](https://github.com/SoulOppen/automatic-pdf)
+[![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-yellow?style=flat-square)](https://opensource.org/licenses/MIT)
 
-*   HTML template rendering using Jinja2
-    
-*   Data handling and transformation with pandas
-    
-*   Support for charts generated with matplotlib
-    
-*   Reading and writing Excel files using openpyxl
-    
-*   Optional export of reports to PDF using Playwright
-    
-*   Project management and execution using uv
-    
+</div>
 
-## Motivation
-----------
+---
 
-In many projects, report generation involves repetitive tasks: copying data from Excel, manually creating charts, and exporting final documents.
+## ¿Qué es?
 
-Automatic was created to solve this problem by enabling:
+**Automatic PDF** es una herramienta en Python que genera **informes en PDF** a partir de datos en **Excel**, una plantilla **HTML** con **Jinja2**, estilos **CSS** y exportación con **Playwright** (Chromium).
 
-*   Automation of periodic reports
-    
-*   Consistent design through reusable templates
-    
-*   Clear separation of data, logic, and presentation
-    
-*   Reduction of human errors in report generation
-    
+Flujo resumido:
 
-## Requirements
-------------
+```text
+static/excel.xlsx  →  pandas + matplotlib  →  templates/informe.html  →  informes/*.pdf
+```
 
-*   Python 3.12 or higher
-    
-*   uv installed
-    
+## Vista previa del flujo
 
-Install uv:
+![Diagrama del flujo de datos](docs/assets/readme-flujo.svg)
+
+## Características
+
+- Plantillas HTML con **Jinja2**
+- Datos y transformaciones con **pandas**
+- Gráficos con **matplotlib** (integrados en el informe)
+- Lectura de Excel con **openpyxl**
+- PDF con **Playwright** (Chromium)
+- Entorno y dependencias con **uv**
+
+## Requisitos
+
+- Python **3.12 o superior**
+- [**uv**](https://github.com/astral-sh/uv) instalado:
+
 ```bash
 pip install uv
 ```
 
-Main project dependencies:
-
-*   jinja2
-    
-*   pandas
-    
-*   matplotlib
-    
-*   openpyxl
-    
-*   playwright (optional, only for PDF export)
-    
-
-Quick Start
------------
+## Inicio rápido
 
 ```bash
-git clone https://github.com/tu-usuario/automatic.git
-cd automatic
-```
-
-Install dependencies using uv:
-```bash
+git clone https://github.com/SoulOppen/automatic-pdf.git
+cd automatic-pdf
 uv sync
-```   
-
-If PDF export will be used, install Playwright browsers:
-```bash
-uv run playwright install
 ```
 
-Usage
------
+Para generar PDFs necesitas los navegadores de Playwright:
 
-### Prepare the data
+```bash
+uv run playwright install chromium
+```
 
-Load and process data using pandas, for example by reading Excel or CSV files.
+Coloca tu archivo **`static/excel.xlsx`** (no se versiona por defecto; está en `.gitignore`) con la hoja y columnas que espera el código, y ejecuta:
 
-### Create an HTML template
+```bash
+uv run python main.py
+```
 
-Define HTML templates using Jinja2 to structure the report.
+Los PDFs se escriben en la carpeta **`informes/`**.
 
-### Render the report
+## Estructura relevante
 
-Combine the processed data with the template to generate the final HTML.
+| Ruta | Rol |
+|------|-----|
+| `main.py` | Lee Excel, genera el gráfico y llama a la generación por fila |
+| `lib.py` | Renderiza la plantilla y exporta el PDF con Playwright |
+| `templates/informe.html` | Plantilla del informe |
+| `static/styles.css` | Estilos del HTML impreso a PDF |
 
-### Export results
+## Agente y documentación para IA
 
-*   HTML as direct output
-    
-*   Excel using openpyxl
-    
-*   Optional PDF using Playwright
-    
+Si usas asistentes de código en el repo, consulta [`AGENTS.md`](AGENTS.md) y la carpeta [`docs/agents/`](docs/agents/).
 
-## Charts
-------
+## Contribuciones
 
-Automatic allows generating charts with matplotlib and integrating them into reports, including:
+1. Fork del repositorio  
+2. Rama para la funcionalidad o corrección  
+3. Commits claros  
+4. Pull Request hacia `main`
 
-*   Line charts
-    
-*   Bar charts
-    
-*   Pie charts
-    
-*   Custom visualizations
-    
+## Licencia
 
-Charts can be exported as images and then referenced from HTML templates.
+Este proyecto se distribuye bajo la **licencia MIT** (si aún no hay archivo `LICENSE` en la raíz, conviene añadirlo para formalizar los términos).
 
-## Contributing
-------------
+## Estado del proyecto
 
-Contributions are welcome.
-
-Recommended steps:
-
-1.  Fork the project
-    
-2.  Create a branch for the feature or fix
-    
-3.  Make changes with clear commits
-    
-4.  Open a Pull Request
-    
-
-## License
--------
-
-This project is distributed under the MIT License.It allows free use, modification, and distribution.
-
-## Project status
---------------
-
-Actively under development.APIs may change while the first version is being stabilized.
-
-Si quieres, también puedo ajustarlo a **estilo README de GitHub**, **documentación técnica**, o **tono más marketing**.
-
-
-
+En desarrollo activo; la API interna puede cambiar mientras se estabiliza la primera versión usable en producción.
